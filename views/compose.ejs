@@ -1,0 +1,11 @@
+<%- include ("partials/header.ejs"); -%>
+
+<form class="compose" name = "newPost" action="/" method="post">
+  <label for="postName">Title</label>
+  <input type="text" name="postName" value="">
+  <label for="postContent">Content</label>
+  <textarea name="postContent" rows="8" cols="80"></textarea>
+  <button type="submit" class="btn btn-info" name="button">Submit</button>
+</form>
+
+<%- include("partials/footer.ejs"); -%>

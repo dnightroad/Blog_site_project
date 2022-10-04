@@ -1,0 +1,25 @@
+<%- include ("partials/header.ejs"); -%>
+
+<p>
+  <%= content %>
+
+</p>
+</div>
+<div class="recent_posts">
+
+<p>
+
+<h2>Recent Posts</h2>
+
+  <% newPosts.forEach(function(post){ %>
+          <h3><a href="post/<%=post.title%>"><%= post.title %></h3></a>
+          <p> <%= post.content.substring(1, 100) + " ...";%></p>
+          <a href="post/<%=post.title%>">[Read More]</a>
+      <%  });%>
+
+</p>
+
+</div>
+<div class="container">
+
+<%- include("partials/footer.ejs"); -%>
